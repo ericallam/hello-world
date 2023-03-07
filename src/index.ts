@@ -12,6 +12,6 @@ new Trigger({
   async run(event, ctx) {
     await ctx.waitFor("waiting...", { seconds: 10 });
 
-    await ctx.logger.info("Hello world from inside trigger.dev 6");
+    await ctx.logger.info("Hello world from inside trigger.dev 7");
   },
 }).listen();
