@@ -10,8 +10,6 @@ new Trigger({
   }),
   // The run functions gets called once per "your.event" event
   async run(event, ctx) {
-    await ctx.waitFor("waiting...", { seconds: 10 });
-
-    await ctx.logger.info("Hello world from inside trigger.dev 9");
+    await ctx.logger.info("Hello world from inside trigger.dev 10");
   },
 }).listen();
